@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="25" viewBox="0 0 60 25">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.895" y1="0.116" x2="0.091" y2="0.937" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#eedfff"/>
+      <stop offset="1" stop-color="#d2d2ff"/>
+    </linearGradient>
+  </defs>
+  <g id="beta" transform="translate(-1499 -182.278)">
+    <rect id="Rectangle_2185" data-name="Rectangle 2185" width="60" height="25" rx="12.5" transform="translate(1499 182.278)" fill="url(#linear-gradient)"/>
+    <text id="Beta-2" data-name="Beta" transform="translate(1530 199.278)" font-size="12" font-family="DMSans-Medium, DM Sans" font-weight="500"><tspan x="-14.22" y="0">BETA</tspan></text>
+  </g>
+</svg>

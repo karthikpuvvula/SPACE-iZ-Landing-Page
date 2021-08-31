@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url('./assets/images/hero-bg.svg') no-repeat center right / contain, 
+    linear-gradient(90deg, #1b4176, #834fbd);
+    background-blend-mode: multiply;
+}
+
+.custom-navbar {
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+}
+
+.btn-custom {
+    border-radius: 10px;
+    margin: 1% 2%;
+    padding: 2px 20px;
+}
+
+.hero-container {
+    margin: 10% 5%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-img {
+    width: 70%;
+}
