@@ -1,0 +1,178 @@
+* {
+    --violet: #b88cfc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/*************** Home Page ****************/
+
+.home-page {
+    min-height: 100vh;
+    background: url('./assets/images/hero-bg.svg') no-repeat center right / contain,
+    radial-gradient(circle at 100px 100px, #3f4c9d 3%, #1b4176 10%, #834fbd 90%);
+    background-blend-mode: multiply;
+    color: white;
+}
+
+/*** Navbar Section ******/
+
+.custom-navbar {
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.btn-custom {
+    border-radius: 10px;
+    font-size: 0.7rem;
+}
+
+/**** Showcase Section *******/
+
+.custom-container {
+    max-width: 75%;
+}
+
+.title-image {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+}
+
+.big-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+}
+
+.txt-custom{
+    font-size: 0.9rem;
+}
+
+/*** Footer ***/
+
+.footer-item {
+    font-size: .6em;
+}
+
+.footer-logo {
+    height: 40px;
+}
+
+/*************** Sign up page ****************/
+
+.left {
+    width: 40%;
+    height: 100vh;
+    background-color: var(--violet);
+    float: left;
+}
+
+.inner-left {
+    height: 100%;
+    width: auto;
+}
+
+.title-left {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.image-left {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+.txt-body {
+    width: 80%;
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 4%;
+}
+
+.txt-footer {
+    font-size: 0.7rem;
+}
+
+.right {
+    min-height: 100vh;
+    color: black;
+    flex-grow: 1;
+}
+
+.inner-right {
+    width: 40%;
+    height: auto;
+}
+
+.title-right {
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+}
+
+.form-holder input[type=text], input[type=password] {
+    width: 90%;
+    height: 20px;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    outline: none;
+    background: none;
+    font-size: 0.7rem;
+}
+
+.form-holder label {
+    font-size: 0.7rem;
+}
+
+.form-holder p {
+    font-size: 0.6rem;
+    width: 90%;
+}
+
+.form-holder a {
+    color: var(--violet);
+}
+
+.form-holder input[type=submit]{
+    background-color: var(--violet);
+    font-size: 0.7rem;
+}
+
+.form-txt {
+    
+    
+}
+
+.form-txt-sm {
+    font-size: 0.5rem;
+
+}
+
+/*********** media queries **************/
+
+@media (max-width: 1028px) {
+    .footer-item {
+        font-size: .5em;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .custom-container {
+        max-width: 90%;
+    }
+
+}

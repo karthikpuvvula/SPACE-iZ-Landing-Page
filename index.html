@@ -11,102 +11,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500;700;900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
 <!--------------- Bootstrap CSS CDN ----------------->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
-<!--------------- Bootstrap Javascript scripts----------------->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>SPACE-iZ</title>
 </head>
 
 <body>
 
+<div class="home-page">
+
 <!----------- Nav bar ------------------>
-
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
-        <a class="navbar-brand" href=""><img src="./assets/logos/space-iz-white-logo.svg" alt="logo" /></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="container d-flex justify-content-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Utility</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Apps</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">CSR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Ecosystem</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Milestones</a>
-                    </li>
-                    <div class="ml-auto">
-                        <button type="button" class="btn btn-dark btn-custom">Sign in</button>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href=""><img src="./assets/logos/space-iz-white-logo.svg" alt="logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item px-lg-1">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item px-lg-1">
+                            <a class="nav-link" href="">Utility</a>
+                        </li>
+                        <li class="nav-item px-lg-1">
+                            <a class="nav-link" href="">Apps</a>
+                        </li>
+                        <li class="nav-item px-lg-1">
+                            <a class="nav-link" href="">CSR</a>
+                        </li>
+                        <li class="nav-item px-lg-1">
+                            <a class="nav-link" href="">Ecosystem</a>
+                        </li>
+                        <li class="nav-item px-lg-1">
+                            <a class="nav-link" href="">Milestones</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto" >
+                        <div class="container ps-0 pt-2">
+                        <button type="button" class="btn btn-dark btn-custom me-4">Sign in</button>
                         <button type="button" class="btn btn-light btn-custom">Apply Now</button>
-                    </div>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-
-<!----------- hero section ------------------>
-    <div class="container-fluid hero-container">
-        <div class="row flex-column-reverse flex-lg-row">
-            <div class="col-lg-6">
-                <div class="hero-content d-flex justify-content-start">
-                    <h1 class="big-title">
-                        Emerging Blockchain Wallet 
-                    </h1>
-                    <p>
-                        SPACE-iZ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestiae unde maxime! Earum provident veritatis quaerat harum porro hic, delectus iste debitis. Placeat laudantium amet optio aliquam! Reiciendis, minima quaerat!
-                    </p>
-                    <div>
-                        <button type="button" class="btn btn-dark btn-custom btn-hero">Get Whitepaper</button>
-                        <button type="button" class="btn btn-light btn-custom">Read One Pager</button>
-                    </div>
+                        </div>
+                        
+                    </ul>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <img class='hero-img' src="./assets/images/cards-images.png" alt="cards">
+        </nav>
+    </header>
+
+<!----------- Showcase section ------------------>
+    <section class="p-md-5 p-3 mx-md-5 text-light mt-lg-5">
+        <div class="container pt-lg-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 order-2 order-lg-1 pt-lg-2 d-flex justify-content-lg-end justify-content-center">
+                    <div class="custom-container">
+                        <h1 class="big-title pb-lg-2">
+                            Emerging Blockchain Wallet 
+                        </h1>
+                        <p class="txt-custom pb-lg-2">
+                            SPACE-iZ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestiae unde maxime! Earum provident veritatis quaerat harum porro hic, delectus iste debitis.
+                        </p>
+                        <div class="d-flex g-2">
+                            <button type="button" class="btn btn-dark btn-custom me-4">Get Whitepaper</button>
+                            <button type="button" class="btn btn-light btn-custom">Read One Pager</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 order-1 order-lg-2 d-flex justify-content-center justify-content-lg-start">
+                    <img class="img-fluid title-image" src="./assets/images/cards-images.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
 <!----------- Footer ------------------>
-    <footer>
-        <div class="container" id="footer">
-            <div class="row">
-                <div class="col-lg-4 footer-item">
-                    <img class="footer-logo" src="./assets/logos/CoinGecko.svg" alt="logo">
-                    <span>CHECK US OUT ON COINGECKO</span>
-                </div>
-                <div class="col-lg-4 footer-item">
-                    <img class="footer-logo" src="./assets/logos/telegram.svg" alt="telegram">
-                    <span>JOIN OUR COMMUNITY</span>
-                </div>
-                <div class="col-lg-4 footer-item">
-                    <img class="footer-logo" src="./assets/logos/coinmarketcap.png" alt="logo">
-                    <span>CHECK US OUT ON COINMARKETGAP</span>
+    <footer  class="justify-content-center px-5 py-2" id="footer">
+        <div class="container px-lg-5 mx-lg-5">
+            <div class="px-lg-5">
+                <div class="row px-lg-5 mx-lg-5 justify-items-center">
+                    <div class="col-md-4 footer-item">
+                        <img class="footer-logo" src="./assets/logos/CoinGecko.svg" alt="logo">
+                        <span>CHECK US OUT ON COINGECKO</span>
+                    </div>
+                    <div class="col-md-4 footer-item">
+                        <img class="footer-logo" src="./assets/logos/telegram.svg" alt="telegram">
+                        <span>JOIN OUR COMMUNITY</span>
+                    </div>
+                    <div class="col-md-4 footer-item">
+                        <img class="footer-logo" src="./assets/logos/coinmarketcap.png" alt="logo">
+                        <span>CHECK US OUT ON COINMARKETGAP</span>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-    
 
-<!--------------- Bootstrap Javascript CDN ----------------->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</div>
+<!--  Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
 
