@@ -8,6 +8,10 @@
     box-sizing: border-box; 
 }
 
+::placeholder {
+    color: #C0C0C0;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
 }
@@ -16,7 +20,7 @@ body {
 
 .home-page {
     min-height: 100vh;
-    background: url('./assets/images/hero-bg.svg') no-repeat center right / contain,
+    background: url('/assets/images/csr-bg.svg') no-repeat center right / contain,
     radial-gradient(circle at 100px 100px, #3f4c9d 3%, #1b4176 10%, #834fbd 90%);
     background-blend-mode: multiply;
     color: white;
@@ -99,12 +103,14 @@ body {
     width: 80%;
     font-size: 0.7rem;
     position: absolute;
-    bottom: 4%;
+    bottom: 40px;
 }
 
 .txt-footer {
     font-size: 0.7rem;
 }
+
+/*----- right side ------*/
 
 .right {
     min-height: 100vh;
@@ -123,9 +129,16 @@ body {
     font-family: sans-serif;
 }
 
-.form-holder input[type=text], input[type=password] {
+.img-right_1 {
+    width: 150px;
+}
+.img-right_2 {
+    width: 50px;
+}
+
+.form-holder .input-txt {
     width: 90%;
-    height: 20px;
+    height: 25px;
     border: none;
     border-bottom: 2px solid lightgray;
     outline: none;
@@ -133,33 +146,81 @@ body {
     font-size: 0.7rem;
 }
 
+.form-holder .input-pwd {
+    width: 100%;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    outline: none;
+    background: none;
+    font-size: 0.7rem;
+}
+
+.wrapper-pwd {
+    position: relative;
+    width: 90%;
+}
+
+.wrapper-pwd span {
+    position: absolute;
+    right: 0;
+}
+
+#validation-box {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: -12px;
+    font-size: 8px;
+    width: 130px;
+    height: 50px;
+    padding: 5px 5px 0;
+    margin: 0;
+    background: rgba(0,0,0,0.6);
+    color: whitesmoke;
+    border-radius: 3px;
+}
+
+.color-green {
+    color: green;
+
+
+}
+
+.color-red {
+    color: red;
+
+
+}
+
 .form-holder label {
     font-size: 0.7rem;
+    display: flex;
+    align-items: flex-end;
 }
 
 .form-holder p {
     font-size: 0.6rem;
     width: 90%;
+    line-height: 1.5rem;
+}
+
+.form-holder .terms {
+    color: #C0C0C0;
 }
 
 .form-holder a {
     color: var(--violet);
+    text-decoration: none;
 }
 
-.form-holder input[type=submit]{
+.form-holder input[type=submit] {
     background-color: var(--violet);
     font-size: 0.7rem;
+    color: whitesmoke;
 }
 
-.form-txt {
-    
-    
-}
 
-.form-txt-sm {
-    font-size: 0.5rem;
-
-}
 
 /*********** media queries **************/
 
@@ -167,12 +228,18 @@ body {
     .footer-item {
         font-size: .5em;
     }
+    /* .inner-right {
+        width: 50%;
+    } */
 }
 
 @media (max-width: 700px) {
 
     .custom-container {
         max-width: 90%;
+    }
+    .inner-right {
+        width: 90%;
     }
 
 }
