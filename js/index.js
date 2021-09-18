@@ -1,12 +1,13 @@
+const formSignup = document.getElementById('form-signup');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-const formSignup = document.getElementById('formSignup');
-const validationBox = document.getElementById('validation-box');
-const eye = document.getElementById("eye");
-const one = document.getElementById("one-check");
-const two = document.getElementById("two");
-const three = document.getElementById("three");
+const referral = document.getElementById('referral-code');
 
+const eye = document.getElementById("eye");
+
+const emailValidation = document.getElementById("email-validation");
+const passwordValidation = document.getElementById("password-validation");
+const referralValidation = document.getElementById("ref-code-validation");
 
 var state = false;
 
@@ -22,21 +23,28 @@ function toggle() {
     }
 }
 
-password.addEventListener('click', () => {
-    validationBox.style.display = "none";
+formSignup.addEventListener('click', () => {
+    emailValidation.classList.remove("d-block");
+    emailValidation.classList.add("d-none");
+    passwordValidation.classList.remove("d-block");
+    passwordValidation.classList.add("d-none");
+    // referralValidation.classList.remove("d-block");
+    // referralValidation.classList.add("d-none");
 });
 
 formSignup.addEventListener('submit', (e) => {
-    const emailValue = email.value.trim()
-    const passwordValue = password.value.trim()
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const referralValue = referral.value.trim();
 
-    let emailErrorArray = [];
+    let isEmailValid = null;
     let passwordErrorArray = [];
+    let isReferralCodeValid = null;
 
     if ( emailValue === '' || emailValue == null ) {
-        emailErrorArray.push(false);
+        isEmailValid = false;
     } else {
-        emailErrorArray.push(true);
+        isEmailValid = true;
     }
 
     if (passwordValue.length < 8) {
@@ -63,11 +71,34 @@ formSignup.addEventListener('submit', (e) => {
         document.getElementById("three-check").classList.add("d-none");
     }
 
-    console.log(emailErrorArray);
+    if ( referralValue === '' || referralValue == null ) {
+        isReferralCodeValid = false;
+    } else {
+        isReferralCodeValid = true;
+    }
+
     console.log(passwordErrorArray);
 
-    if (passwordErrorArray.includes(false) || emailErrorArray.includes(false)) {
+    const isPasswordValid = !passwordErrorArray.includes(false);
+
+    console.log(isEmailValid);
+    console.log(isPasswordValid);
+    console.log(isReferralCodeValid);
+
+    if ( isEmailValid || isPasswordValid ) {
         e.preventDefault();
-        validationBox.style.display = "block";
-    } 
+        if (!isEmailValid) {
+            emailValidation.classList.remove("d-none");
+            emailValidation.classList.add("d-block");
+        }
+        if (!isPasswordValid) {
+            passwordValidation.classList.remove("d-none");
+            passwordValidation.classList.add("d-block");
+        }
+        // if (!isReferralCodeValid) {
+        //     referralValidation.classList.remove("d-none");
+        //     referralValidation.classList.add("d-block");
+        // }
+    }
+    
 });

@@ -136,17 +136,12 @@ body {
     width: 50px;
 }
 
-.form-holder .input-txt {
-    width: 90%;
-    height: 25px;
-    border: none;
-    border-bottom: 2px solid lightgray;
-    outline: none;
-    background: none;
-    font-size: 0.7rem;
+.form-holder {
+    width: 100%;
+    justify-content: left;
 }
 
-.form-holder .input-pwd {
+.form-holder .input-txt, .input-pwd {
     width: 100%;
     height: 25px;
     border: none;
@@ -156,41 +151,50 @@ body {
     font-size: 0.7rem;
 }
 
-.wrapper-pwd {
+.wrapper-email, .wrapper-pwd, .wrapper-ref-code {
     position: relative;
-    width: 90%;
+    width: 100%;
 }
 
-.wrapper-pwd span {
+.wrapper-pwd #eye {
     position: absolute;
     right: 0;
 }
 
-#validation-box {
-    display: none;
+#email-validation, 
+#password-validation, 
+#ref-code-validation {
     position: absolute;
     right: 0;
-    top: -12px;
-    font-size: 8px;
-    width: 130px;
-    height: 50px;
-    padding: 5px 5px 0;
+    top: -21px;
+    font-size: 10px;
+    width: 150px;
+    height: 60px;
+    padding: 5px;
     margin: 0;
-    background: rgba(0,0,0,0.6);
+    background: #5e6673;
     color: whitesmoke;
-    border-radius: 3px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
+
+li span {
+    position: relative;
+    left: -8px;
+  }
+
 
 .color-green {
-    color: green;
-
-
+    color: lightgreen;
+    font-size: 0.7rem;
 }
 
 .color-red {
     color: red;
-
-
+    font-size: 0.7rem;
 }
 
 .form-holder label {
