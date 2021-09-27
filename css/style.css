@@ -177,12 +177,53 @@ a {
     font-size: 0.7rem;
 }
 
-.wrapper-email, .wrapper-pwd, .wrapper-ref-code {
+.iti { 
+    width: 100%; 
+    
+}
+
+.wrapper {
     position: relative;
     width: 100%;
 }
 
-.wrapper-pwd .fa-eye {
+.wrapper-otp {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    align-items: space-around;
+    justify-content: center;
+}
+
+.otp-input {
+    display: flex;
+    justify-content: start;
+}
+
+.otp-input input {
+    margin-right: 5px;
+    height: 35px;
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+    background: #eef2f3;
+}
+
+.otp-input input:focus {
+    box-shadow: 0 3px 10px #888888;
+    background: #fff;
+    outline: none;
+}
+
+#countdown {
+    color: var(--violet);
+}
+
+.wrapper .fa-eye {
     position: absolute;
     right: 0;
 }
@@ -233,6 +274,10 @@ li span {
     font-size: 0.6rem;
     width: 90%;
     line-height: 1.5rem;
+}
+
+.form-check p {
+    line-height: 0.9rem;
 }
 
 .form-holder .terms {
