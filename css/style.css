@@ -296,6 +296,89 @@ li span {
 }
 
 
+/* Congratulations page */
+
+#congratulations {
+    height: 100vh;
+}
+
+.congrats-page {
+    height: 100%;
+    width: 100%;
+    background: url('/assets/images/csr-bg.svg') no-repeat right top / contain,
+    #f5f7fa;
+    background-blend-mode: multiply;
+    position: relative;
+}
+
+.congrats-navbar {
+    background:white;
+    box-shadow: 0 2px 10px -1px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.congrats-navbar .navbar-brand img {
+    height: 50px;
+    /* background: linear-gradient(to right, #1b4176, #834fbd); */
+}
+.congrats-body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.congrats-box {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px; */
+}
+
+.congrats-box h5 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.congrats-box p {
+    font-size: 0.7rem;
+    width: 90%;
+    line-height: 1.2rem;
+}
+
+.congrats-box input[type=submit] {
+    background-color: var(--violet);
+    font-size: 0.7rem;
+    color: whitesmoke;
+    width: 70px;
+}
+
+.outer-circle {
+    background: #f5f7fa;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    /* border-top-left-radius: 50px;
+    border-top-right-radius: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.check-box {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: var(--violet);
+    color: white;
+}
+
 
 /*********** media queries **************/
 
@@ -315,6 +398,9 @@ li span {
     }
     .inner-right {
         width: 90%;
+    }
+    .congrats-box {
+        width: 300px;
     }
 
 }
