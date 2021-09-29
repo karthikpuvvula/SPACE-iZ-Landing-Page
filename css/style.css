@@ -289,14 +289,14 @@ li span {
     text-decoration: none;
 }
 
-.form-holder input[type=submit] {
+.btn-violet {
     background-color: var(--violet);
     font-size: 0.7rem;
-    color: whitesmoke;
+    color: white;
 }
 
 
-/* Congratulations page */
+/********* Congratulations page ************/
 
 #congratulations {
     height: 100vh;
@@ -353,20 +353,11 @@ li span {
     line-height: 1.2rem;
 }
 
-.congrats-box input[type=submit] {
-    background-color: var(--violet);
-    font-size: 0.7rem;
-    color: whitesmoke;
-    width: 70px;
-}
-
 .outer-circle {
     background: #f5f7fa;
     height: 100px;
     width: 100px;
     border-radius: 50px;
-    /* border-top-left-radius: 50px;
-    border-top-right-radius: 50px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -377,6 +368,133 @@ li span {
     border-radius: 25px;
     background-color: var(--violet);
     color: white;
+}
+
+
+/********** Whitepaper Page ************/
+
+#whitepaper {
+    height: 100vh;
+}
+
+#whitepaper .congrats-page {
+    background: url('/assets/images/csr-bg.svg') no-repeat right top / contain,
+    white;
+}
+
+.title-gradient {
+    background: linear-gradient(to right, #1b4176, var(--violet));
+
+}
+
+
+
+/********** Select Card Page ************/
+
+#select-card {
+    height: 100vh;
+    background: #f5f7fa;
+}
+
+.select-card {
+    
+}
+
+.left-bar {
+    /* position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0; */
+    width: 5%;
+    height: 100vh;
+    background-color: #102c3c;
+    color: #f5f7fa;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.right-section {
+    width: 100%;
+    height: 100vh;
+
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container {
+    width: 60%;
+    height: auto;
+
+}
+
+.right-text {
+    width: 35%;
+}
+
+.right-text h5 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: black;
+    line-height: 1.6rem;
+}
+
+.right-text p {
+    font-size: 0.6rem;
+    line-height: 1.2rem;
+}
+
+.right-text .terms {
+    color: #C0C0C0;
+}
+
+.cards {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.card-holder {
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.c-1 {
+    background: linear-gradient(to right, gray, white);
+}
+
+.c-2 {
+    background: linear-gradient(to right, #1b4176, var(--violet));
+}
+
+.card-footer {
+    width: 250px;
+    padding: 0;
+    background-color: white;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-footer span {
+    font-size: 0.7rem;
 }
 
 

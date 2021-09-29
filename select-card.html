@@ -20,42 +20,47 @@
     <title>SPACE-iZ</title>
 </head>
 
-<body id="congratulations">
+<body id="select-card">
 
-<div class="congrats-page">
+<div class="select-card d-flex align-items-center">
 
-<!----------- Nav bar ------------------>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark congrats-navbar">
-            <div class="container">
-                <a class="navbar-brand" href=""><img src="./assets/logos/space-iz-red-logo.svg" alt="logo" /></a>
-                <div class="back me-0 ms-auto">
-                    <a href="/index.html"><img src="/assets/icons/close-button.svg" alt="back"></a>
-                </div>
-            </div>
-        </nav>
-    </header>
+<!----------- Left bar ------------------>
+    <section class="left-bar d-none d-lg-block">
+        <span class="d-flex justify-content-center pt-5">W</span>
+    </section>
 
-<!----------- Showcase section ------------------>
-    <section class="congrats-body">
-        <div class="contianer congrats-box p-5">
-            <div class="form-holder container">
-                <div class="outer-circle mb-4">
-                    <div class="check-box d-flex justify-content-center align-items-center">
-                        <i class="fas fa-check"></i>
+<!----------- right section ------------------>
+    
+    <section class="right-section">
+        <div class="inner-container p-2">
+            <div class="right-text">
+                <h5 class="mb-2">Please select debit card of your choice</h5>
+                <p class="terms mb-3">Spend globally with great exchange rates without wait or hassle.</p>
+            </div>  
+            <div class="cards">
+                <div class="card-holder p-5">
+                    <div class="card c-1 mb-2 mt-3">
+
+                    </div>
+                    <div class="card-footer">
+                        <span>Cloud</span>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckCloud">
                     </div>
                 </div>
-                
-                <h5 class="mb-3">Congratulations!</h5>
-                <p class="mb-5">Your account has been added to the waitlist.</p>
-                <input type="submit" class="btn btn-custom btn-violet px-3 btn-lg" value="Okay">
-            
+                <div class="card-holder">
+                    <div class="card c-2 mb-2 mt-3">
+                        
+                    </div>
+                    <div class="card-footer">
+                        <span>Purple</span>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckPurple">
+                    </div>
+                </div>
             </div>
+            <input type="submit" class="btn btn-custom btn-violet btn-lg d-block mt-4 px-4" value="Next">
         </div>
+        
     </section>
-    
-
-
 
 </div>
 <!--  Bootstrap Bundle with Popper -->
