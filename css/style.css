@@ -383,8 +383,10 @@ li span {
 }
 
 .title-gradient {
-    background: linear-gradient(to right, #1b4176, var(--violet));
-
+    display: inline-block;
+    background: linear-gradient(to right, #1b4176, #834fbd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 
@@ -424,9 +426,9 @@ li span {
 }
 
 .inner-container {
-    width: 60%;
+    width: auto;
     height: auto;
-
+    display: inline-block;
 }
 
 .right-text {
@@ -457,7 +459,7 @@ li span {
 }
 
 .card-holder {
-    width: 350px;
+    min-width: 350px;
     height: auto;
     border-radius: 20px;
     background-color: white;
@@ -504,9 +506,17 @@ li span {
     .footer-item {
         font-size: .5em;
     }
-    /* .inner-right {
-        width: 50%;
-    } */
+    .right-text {
+        width: 100%;
+    }
+    .right-section {
+        padding-top: 50px;
+        min-height: 100vh;
+        align-items: flex-start;
+    }
+    .cards {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 700px) {
@@ -520,5 +530,7 @@ li span {
     .congrats-box {
         width: 300px;
     }
+    
+    
 
 }
